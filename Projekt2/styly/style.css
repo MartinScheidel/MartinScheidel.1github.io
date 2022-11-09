@@ -9,7 +9,7 @@ body{
 }
 
 .text-primary{
-    color: aliceblue;
+    color: #980303;
 }
 
 p{
@@ -45,7 +45,7 @@ p{
 
 
 #navbar a{
-    color: red;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -139,10 +139,11 @@ p{
 #what .item{
     text-align: center;
     padding: 1rem;
+    flex: 1;
 }
 
 
-#what .items .item{
+#what .items .item i {
     background: #333333;
     padding: 1rem;
     border-radius: 50%;
