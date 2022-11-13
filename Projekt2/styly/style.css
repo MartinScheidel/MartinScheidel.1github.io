@@ -166,7 +166,7 @@ p{
 }
 
 .list li {
-    padding: 0.5rem 0;
+    padding: 0.5rem 0.5rem;
     border-bottom: red dotted 1px;
 }
 
@@ -180,4 +180,44 @@ p{
 
 #who .who-img{
     background: url("../fotky/Screenshot_as_audi_abt_rs6r_2021_acu_yasmarina_20-1-122-21-14-50.png") no-repeat center center/cover;
+}
+
+#project {
+    display: flex;
+}
+#project .project-img{
+    background: url("https://images.unsplash.com/photo-1515283709260-ee29296f1534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80") no-repeat center center/cover;
+}
+#project div{
+    flex: 1;
+}
+#images .items{
+    display: flex;
+    justify-content: space-between;
+}
+#images .items img{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+#contact{
+    display: flex;
+}
+#contact div{
+    flex: 1;
+}
+#contact .contact-form .form-group{
+    margin: 0.75rem;
+}
+#contact .contact-form label{
+    display: block;
+    margin-bottom: 3px;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact h3{
+    margin-top: 2rem;
 }
