@@ -14,16 +14,13 @@
       href="styly/style.css">
 
 <body id="home">
-
-</body>
-
 <nav id="navbar">
     <div id="logo"><a href="index.html"><span class="text-primary"><i class="fa-sharp fa-solid fa-car"></i></span> Assetto Corsa </a></div>
 
     <ul>
-        <li><a href="#home">úvod</a></li>
-        <li><a href="#about">o hře</a></li>
-        <li><a href="#kontakt">kontakt</a></li>
+        <li><a href="#showcase">úvod</a></li>
+        <li><a href="#what">o hře</a></li>
+        <li><a href="#who">kontakt</a></li>
         <li><a href="#projekt">projekt</a></li>
     </ul>
 
@@ -49,34 +46,99 @@
         <div class="items">
             <div class="item">
                 <i class="fa-solid fa-flag-checkered fa-2x"></i>
-            </div>
                 <div>
                     <h3>Simulátor</h3>
                     <p>Jedna z nejproparacovanějších fyzik na trhu</p>
                 </div>
-
+            </div>
 
             <div class="item">
                 <i class="fas fa-car fa-2x"></i>
-            </div>
                 <div>
                     <h3>Skvělá grafika</h3>
                     <p>Laserem skenované tratě</p>
                 </div>
+            </div>
 
             <div class="item">
-                <i class="fa-solid fa-cars"></i>
-            </div>
+                <i class="fas fa-car fa-2x"></i>
                 <div>
                     <h3>Multiplayer</h3>
                     <p>Závoďte s přáteli</p>
-        </div>  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="who">
+    <div class="who-img"></div>
+    <div class="who-text bg-dark py-2">
+        <h2 class="m-heading">
+            <span class="text-primary">Kdo</span>
+            jsme
+        </h2>
+        <p>
+            lorem ipsum soil ir ulum am in kabrum
+        </p>
+        <h3> Náš Tým </h3>
+        <ul class="list">
+            <li>bnslgsndglnsnslfnsdfs</li>
+            <li>nkjbnsdlfsldflsdflsdlfs</li>
+        </ul>
     </div>
 </section>
 
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script>
+    // Smooth scrolling
+    $('#navbar a, .btn').on('click', function (event) {
+        if (this.hash !== '') {
+            event.preventDefault();
+            const hash = this.hash;
+            $('html, body').animate(
+                {
+                    scrollTop: $(hash).offset().top - 100
+                }, 800
+            )
+        }
+    })
 
 
-<body>
+    var nav_sections = $('section');
+    var main_nav = $('#navbar li, .mobile-nav');
 
-</body>
-</html>
+    $(window).on('scroll', function() {
+
+        var cur_pos = $(this).scrollTop() + 200;
+
+        // Menu Opacity on scrolling and hidding source
+
+        if (cur_pos > 350) {
+            document.querySelector('#navbar').style.opacity = 0.9;
+            document.querySelector('#showcase .source').style.display = "none";
+        }
+        else {
+            document.querySelector('#navbar').style.opacity = 1;
+            document.querySelector('#showcase .source').style.display = "block";
+        }
+
+        // Navigation active state on scroll
+
+        nav_sections.each(function() {
+            var top = $(this).offset().top,
+                bottom = top + $(this).outerHeight();
+
+            if (cur_pos >= top && cur_pos <= bottom) {
+                if (cur_pos <= bottom) {
+                    main_nav.find('a').removeClass('active');
+                }
+                main_nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+            }
+
+            if (cur_pos < 300) {
+                $("#navbar ul li a").removeClass('active');
+            }
+        });
+    });
+</script>
+

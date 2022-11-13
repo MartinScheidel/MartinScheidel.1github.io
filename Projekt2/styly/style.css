@@ -149,3 +149,35 @@ p{
     border-radius: 50%;
     margin-bottom: 1rem;
 }
+
+
+.bg-light{
+    background: aliceblue;
+    color: black;
+}
+
+.bg-dark{
+    background: black;
+    color: aliceblue;
+}
+.list{
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: red dotted 1px;
+}
+
+#who {
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img{
+    background: url("../fotky/Screenshot_as_audi_abt_rs6r_2021_acu_yasmarina_20-1-122-21-14-50.png") no-repeat center center/cover;
+}
