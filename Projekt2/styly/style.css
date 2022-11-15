@@ -186,7 +186,7 @@ p{
     display: flex;
 }
 #project .project-img{
-    background: url("https://images.unsplash.com/photo-1515283709260-ee29296f1534?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=934&q=80") no-repeat center center/cover;
+    background: url() no-repeat center center/cover;
 }
 #project div{
     flex: 1;
