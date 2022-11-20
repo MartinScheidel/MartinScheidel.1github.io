@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
-
-<link rel="stylesheet"
-      href="styly/style.css">
+<link rel="stylesheet" href="styly/style.css">
+<link rel="stylesheet" media="screen and (min-width: 1100px)" href="styly/widescreen.css"/>
+<link rel="stylesheet" media="screen and (max-width: 768px)" href="styly/mobile.css"/>
 
 <body id="home">
 <nav id="navbar">
@@ -161,6 +161,9 @@
                           placeholder="zpráva"></textarea>
             </div>
 
+            <form method="post" action="php/form.php"></form>
+            <input type="submit" value="Odeslat">
+
 
 
         </form>
@@ -184,12 +187,13 @@
     </div>
 </section>
 
-
 <footer id="main-footer" class="bg-dark text-center py-1">
     <div class="container">
         <p>Copyright why.sr.ro</p>
     </div>
 </footer>
+
+
 
 <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 <script>

@@ -186,7 +186,7 @@ p{
     display: flex;
 }
 #project .project-img{
-    background: url() no-repeat center center/cover;
+    background: url("../fotky/Screenshot_actr_bmw_m4_cs_st_showroom05_7-7-122-16-36-59.png") no-repeat center center/cover;
 }
 #project div{
     flex: 1;
