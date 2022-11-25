@@ -118,16 +118,16 @@ p{
 }
 
 .py-1{
-    padding: 1.5rem 0;
+    padding: 1.5rem;
 }
 
 .py-2{
-    padding: 2rem 0;
+    padding: 2rem;
 }
 
 
 .py-3{
-    padding: 3rem 0;
+    padding: 3rem;
 }
 
 
@@ -152,7 +152,7 @@ p{
 
 
 .bg-light{
-    background: aliceblue;
+    background: #ffffff;
     color: black;
 }
 
@@ -220,4 +220,33 @@ p{
 }
 #contact h3{
     margin-top: 2rem;
+}
+
+.m-1{
+    margin: 1.5rem;
+}
+
+.m-2{
+    margin: 2.5rem;
+}
+
+
+.m-3{
+    margin: 3.5rem;
+}
+
+#who{
+    background: black;
+}
+
+#project{
+    background: black;
+}
+
+#contact-adress{
+    background: black;
+}
+
+#hambac{
+    display: none;
 }
