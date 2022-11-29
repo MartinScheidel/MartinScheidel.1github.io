@@ -15,70 +15,72 @@
 }
 
 
-@media(max-width: 500px){
-    #navbar #logo{
-        margin: 1rem;
+@media screen and (max-width: 500px) {
+    #navbar {
+        flex-direction: column;
+        align-items: stretch;
         text-align: center;
     }
 
-    #showcase .showcase-content{
-        top: 100px;
-    }
-
-    #who{
+    #navbar #hambac {
         display: block;
     }
 
-    #who .who-img{
+    #navbar ul {
+        flex-direction: column;
+        align-items: stretch;
+        display: none; /* <-- doplním až nakonec */
+    }
+
+    #navbar ul li {
+        padding: 0.5rem;
+        border-bottom: #f4f4f4 1px dotted;
+    }
+
+    #navbar ul li:first-child {
+        margin-top: 0.8rem;
+        border-top: #f4f4f4 1px dotted;
+    }
+
+    #navbar #logo {
+        margin-bottom: 1.3rem;
+        text-align: center;
+    }
+
+    .l-heading {
+        letter-spacing: 0;
+        font-size: 3rem;
+    }
+
+    #project {
+        display: block;
+        padding: 1rem;
+    }
+
+    #project .m-heading {
+        margin-bottom: 2rem;
+    }
+
+    #images .items div:last-child {
         display: none;
     }
 
-
-    #images .items img{
-        width: 80%;
-    }
-
-    #images .items div:last-child{
-        display: none;
-    }
-
-    #contact{
+    #contact {
         flex-direction: column;
     }
 }
-@media(max-width: 568px) {
-    .l-heading{
+
+@media screen and (max-height: 568px) {
+    .l-heading {
         font-size: 2rem;
+        letter-spacing: 0;
     }
-    #navbar{
+
+    #navbar {
         align-items: flex-start;
     }
-    #navbar ul{
+
+    #navbar ul {
         flex-wrap: wrap;
-    }
-    #navbar ul li a{
-        padding: 0 1rem;
-    }
-
-}
-
-@media(max-width: 500px){
-    #navbar{
-        flex-direction: column;
-        align-items: stretch;
-    }
-    #navbar ul{
-        display: none;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: stretch;
-        text-align: center;
-    }
-    #navbar ul li{
-        padding: 0.6rem;
-        border-bottom: dotted 1px aliceblue;
-    }
-    #hambac{
-        display: block;
-    }
-}
+        align-items: flex-start;
+    }}
