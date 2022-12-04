@@ -1,10 +1,4 @@
-
-
-
-/* BASIC STYLES */
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -17,45 +11,34 @@ ul {
 }
 
 /* NAV BAR */
+#nav_bar {
+    float: top;
 
-#navbar{
-    background: #000000;
 }
 
-#navbar a{
-    color: #000000;
-}
-
-#navbar h1{
-    float: left;
-    padding-top: 20px;
-}
-
-#navbar ul{
+#nav_bar li {
     float: right;
-    list-style: none;
+    display: inline-block;
+    padding: 8px;
+
+}
+.advanced a{
+    background: dodgerblue;
+    color: white;
+    border-radius: 10px;
+
 }
 
-#navbar ul li{
-    float: left;
+#nav_bar #sign_in {
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
-#navbar ul li a{
-    display: block;
-    padding: 20px;
-    text-align: center;
+.nav-links {
+    color: #404040;
 }
-
-#navbar ul li a:hover,
-#navbar ul li a.current{
-    background: #262626;
-    color: #ff0000;
-}
-
-
-
-
-
 
 a {
     text-decoration: none;
@@ -64,15 +47,16 @@ a {
 
 li.nav-links a:hover {
     text-decoration: underline;
+    background: #02f7ff;
 }
 
-#sign_in:hover {
-    box-shadow: 1px 1px 5px #999;
+.advanced a:hover{
+    background: #02f7ff;
+    text-decoration: underline;
+    border-radius: 10px;
 }
 
-#sign_in {
-    color: #fff;
-}
+
 
 /* GOOGLE AREA */
 .google #google_logo {
@@ -82,7 +66,11 @@ li.nav-links a:hover {
     clear: both;
     padding-top: 112px;
     padding-bottom: 20px;
+    font-size: 50px;
+
 }
+
+
 
 .form {
     text-align: center;
@@ -107,6 +95,8 @@ li.nav-links a:hover {
     text-align: center;
     padding-top: 30px;
     margin-bottom: 300px;
+    color: floralwhite;
+    border-radius: 40px;
 }
 
 /* FOOTER */
@@ -117,6 +107,7 @@ footer  {
     bottom: 0;
     padding-bottom: 0;
     width: 100%;
+    margin-top: 190px;
 
 }
 
@@ -150,6 +141,7 @@ footer ul a:hover {
 
     #google_logo {
         padding: 0;
+
     }
 
     .buttons {
@@ -233,6 +225,4 @@ footer ul a:hover {
 
     }
 }
-
-
 
